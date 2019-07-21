@@ -1,5 +1,20 @@
 // shaders for Nano
 
+// -------------------- Particle dust
+// from Uncreation by Who-[Soup]
+textures/nano/dust_shader
+{
+        cull none
+        entityMergable
+	qer_editorimage textures/nano/dust
+        {
+                map textures/nano/dust.tga
+                blendFunc blend
+                rgbGen          vertex
+                alphaGen        vertex
+        }
+}
+
 // -------------------- Sky box
 // environment map "Top of the Heap" by Mighty Pete
 textures/nano/top-of-the-heap
@@ -222,7 +237,7 @@ textures/nano/shiny_blue
 		tcGen lightmap 
 	}
 	{
-                map textures/nano/glass.tga
+                map textures/nano/envmap.tga
                 tcGen environment
                 blendfunc gl_dst_color gl_src_alpha
         }
@@ -243,7 +258,7 @@ textures/nano/shiny_red
 		tcGen lightmap 
 	}
 	{
-                map textures/nano/glass.tga
+                map textures/nano/envmap.tga
                 tcGen environment
                 blendfunc gl_dst_color gl_src_alpha
         }
@@ -264,7 +279,7 @@ textures/nano/shiny_gray
 		tcGen lightmap 
 	}
 	{
-                map textures/nano/glass.tga
+                map textures/nano/envmap.tga
                 tcGen environment
                 blendfunc gl_dst_color gl_src_alpha
         }

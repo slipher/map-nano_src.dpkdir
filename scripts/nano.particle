@@ -1,0 +1,33 @@
+nano/dust
+{
+	ejector
+	{
+		particle
+		{
+		shader sync textures/nano/dust_shader
+		displacement 0 0 0 ~200.0
+		cullOnStartSolid
+
+		velocityType		static
+		velocityDir		linear
+		velocityMagnitude	5
+		velocity		0 0 -1 ~2
+
+		accelerationType	static
+		accelerationDir		linear
+		acceleration		0 0 -1 ~25
+		accelerationMagnitude 	10
+
+
+		radius		5000 5 2
+		alpha		8000 1 .5
+		rotation	0 0 ~360
+		bounce		cull
+
+		lifeTime 20000
+		}
+	count infinite
+	delay 0
+	period 100 - ~0%
+	}
+}
