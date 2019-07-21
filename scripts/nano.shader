@@ -30,7 +30,7 @@ textures/nano/top-of-the-heap
 }
 
 
-// orange light 
+//square orange light 
 textures/nano/sq_light_orange_s_10k
 {
 	qer_editorimage textures/nano/sq_light_orange.tga
@@ -49,10 +49,26 @@ textures/nano/sq_light_orange_s_10k
 	}
 }
 
+textures/nano/sq_light_orange_s_5k
+{
+	qer_editorimage textures/nano/sq_light_orange.tga
+	surfaceparm nomarks
+	q3map_surfacelight 10000
+	{
+		map textures/nano/sq_light_orange.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+	}
+	{
+		map textures/nano/sq_light_orange.tga
+		blendfunc add
+	}
+}
 // source:
 // evil lair's Quake 3:Arena texture set 8  
 //
-
 textures/nano/e8btrimlight
 {
 	qer_editorimage textures/nano/e8btrimlight.tga
@@ -138,7 +154,7 @@ textures/nano/evil8_rlight
 	qer_editorimage textures/nano/e8_rlight.tga
 	q3map_lightimage textures/nano/e8_rlight.blend.tga
 	surfaceparm nomarks
-	q3map_surfacelight 950
+	q3map_surfacelight 1000
 	{
 		map textures/nano/e8_rlight.tga
 	}
@@ -153,6 +169,7 @@ textures/nano/evil8_rlight
 	}
 }
 
+// blue light trim 
 textures/nano/e8lighttrim_blue
 {
 	qer_editorimage textures/nano/e8lighttrim.tga
@@ -170,8 +187,99 @@ textures/nano/e8lighttrim_blue
 		map textures/nano/e8lighttrim.blend.tga
 		blendfunc add
 	}
+
 }
 
+// blue light trim -- running light
+textures/nano/e8lighttrim_blue_75
+{
+	qer_editorimage textures/nano/e8lighttrim.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.0 0.25
+	}
+
+}
+
+textures/nano/e8lighttrim_blue_50
+{
+	qer_editorimage textures/nano/e8lighttrim.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.20 0.25
+	}
+
+}
+
+textures/nano/e8lighttrim_blue_25
+{
+	qer_editorimage textures/nano/e8lighttrim.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.4 0.25
+	}
+
+}
+
+textures/nano/e8lighttrim_blue_00
+{
+	qer_editorimage textures/nano/e8lighttrim.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.6 0.25
+	}
+
+}
+
+// red light trim 
 textures/nano/e8lighttrim_red
 {
 	qer_editorimage textures/nano/e8lighttrim_r.tga
@@ -188,6 +296,95 @@ textures/nano/e8lighttrim_red
 	{
 		map textures/nano/e8lighttrim_r.blend.tga
 		blendfunc add
+	}
+
+}
+
+// red light trim -- running light
+textures/nano/e8lighttrim_red_75
+{
+	qer_editorimage textures/nano/e8lighttrim_r.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim_r.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim_r.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.0 0.25
+	}
+
+}
+
+textures/nano/e8lighttrim_red_50
+{
+	qer_editorimage textures/nano/e8lighttrim_r.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim_r.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim_r.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.20 0.25
+	}
+
+}
+
+textures/nano/e8lighttrim_red_25
+{
+	qer_editorimage textures/nano/e8lighttrim_r.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim_r.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim_r.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.4 0.25
+	}
+
+}
+
+textures/nano/e8lighttrim_red_00
+{
+	qer_editorimage textures/nano/e8lighttrim_r.tga
+	surfaceparm nomarks
+	q3map_surfacelight 400
+	{
+		map textures/nano/e8lighttrim_r.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8lighttrim_r.blend.tga
+		blendfunc add
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sin 0.0 1.0 0.6 0.25
 	}
 
 }
@@ -315,3 +512,17 @@ textures/nano/e8support05_decal
 		tcGen lightmap 
 	}
 }
+
+// evillairs white striplight
+textures/nano/e6basicstrip_white_500
+{
+        qer_editorimage textures/nano/e6basicstrip_white.tga
+        q3map_surfacelight 500
+        surfaceparm nomarks
+        surfaceparm nolightmap
+        {
+                map textures/nano/e6basicstrip_white.tga
+
+        }
+}
+
