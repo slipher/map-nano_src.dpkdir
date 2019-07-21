@@ -177,6 +177,7 @@ textures/nano/e8lighttrim_red
 
 }
 
+// jumppad
 textures/nano/e8_jumppad02
 {
 	q3map_lightimage textures/nano/e8_jumppad02_fx.tga
@@ -202,6 +203,100 @@ textures/nano/e8_jumppad02
 		map $lightmap 
 		blendfunc gl_dst_color gl_one_minus_dst_alpha
 		rgbGen identity
+		tcGen lightmap 
+	}
+}
+
+//shiny e8base_blue
+textures/nano/shiny_blue
+{
+	qer_editorimage textures/nano/e8base_blue.tga
+	//q3map_surfacelight 50
+	surfaceparm nomarks
+	{
+		map textures/nano/e8base_blue.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+                map textures/nano/glass.tga
+                tcGen environment
+                blendfunc gl_dst_color gl_src_alpha
+        }
+}
+
+//shiny e8base_red
+textures/nano/shiny_red
+{
+	qer_editorimage textures/nano/e8base_red.tga
+//	q3map_surfacelight 50
+	surfaceparm nomarks
+	{
+		map textures/nano/e8base_red.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+                map textures/nano/glass.tga
+                tcGen environment
+                blendfunc gl_dst_color gl_src_alpha
+        }
+}
+
+//shiny e8_base1
+textures/nano/shiny_gray
+{
+	qer_editorimage textures/nano/e8_base1.tga
+//	q3map_surfacelight 50
+	surfaceparm nomarks
+	{
+		map textures/nano/e8_base1.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+                map textures/nano/glass.tga
+                tcGen environment
+                blendfunc gl_dst_color gl_src_alpha
+        }
+}
+
+// special decal floor
+textures/nano/e8cretefloor01b_decal
+{
+	qer_editorimage textures/nano/e8cretefloor01b.tga
+	polygonOffset
+	{
+		map textures/nano/e8cretefloor01b.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
+		tcGen lightmap 
+	}
+}
+
+// special decial ceiling
+textures/nano/e8support05_decal
+{
+
+	qer_editorimage textures/nano/e8support05_r.tga
+	polygonOffset
+	{
+		map textures/nano/e8support05_r.tga
+	}
+	{
+		map $lightmap
+		blendfunc filter
 		tcGen lightmap 
 	}
 }
