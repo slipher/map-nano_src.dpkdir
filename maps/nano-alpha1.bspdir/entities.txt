@@ -1,0 +1,162 @@
+{
+"classname" "worldspawn"
+"message" "Nano^1!"
+}
+{
+"classname" "info_player_intermission"
+"origin" "0 1056 -32"
+"angle" "-90"
+}
+{
+"classname" "info_human_intermission"
+"origin" "0 -128 64"
+"angle" "90"
+}
+{
+"classname" "info_alien_intermission"
+"origin" "0 1664 64"
+"angle" "-90"
+}
+{
+"classname" "team_human_spawn"
+"origin" "104 232 8"
+"angle" "-135"
+}
+{
+"classname" "team_alien_spawn"
+"origin" "-95.9998 1312 24"
+"angle" "45"
+}
+{
+"classname" "target_location"
+"origin" "0 1504 64"
+"angle" "-90"
+"message" "Red Base"
+"count" "1"
+}
+{
+"classname" "target_location"
+"origin" "0 32 64"
+"angle" "90"
+"message" "Blue Base"
+"count" "4"
+}
+{
+"classname" "team_human_reactor"
+"origin" "-8 320 24"
+}
+{
+"classname" "team_alien_overmind"
+"origin" "0 1200 24"
+"angle" "-90"
+}
+{
+"classname" "team_human_armoury"
+"origin" "-104 232 24"
+"angle" "180"
+}
+{
+"classname" "target_location"
+"origin" "0 768 320"
+"message" "Upper Tower"
+"count" "3"
+}
+{
+"classname" "target_location"
+"origin" "832 1136 24"
+"angle" "90"
+"message" "Red Tunnel"
+"count" "1"
+}
+{
+"classname" "target_location"
+"origin" "-832 400 24"
+"angle" "-90"
+"message" "Blue Tunnel"
+"count" "4"
+}
+{
+"classname" "target_location"
+"origin" "0 768 -64"
+"message" "Lower Tower"
+"count" "3"
+}
+{
+"classname" "target_speaker"
+"origin" "0 768 1040"
+"noise" "sound/nano/wind2.wav"
+"spawnflags" "1"
+}
+{
+"classname" "target_speaker"
+"origin" "0 768 96"
+"noise" "sound/nano/slowpulse2.wav"
+"spawnflags" "1"
+}
+{
+"classname" "team_alien_acid_tube"
+"origin" "-104 1420 32"
+}
+{
+"classname" "team_alien_acid_tube"
+"origin" "-104 1588 32"
+}
+{
+"classname" "team_alien_acid_tube"
+"origin" "104 1588 32"
+}
+{
+"classname" "team_alien_acid_tube"
+"origin" "104 1420 32"
+}
+{
+"classname" "team_human_mgturret"
+"origin" "104 -52 32"
+"angle" "90"
+}
+{
+"classname" "team_human_mgturret"
+"origin" "104 116 32"
+"angle" "-90"
+}
+{
+"classname" "team_human_mgturret"
+"origin" "-104 116 32"
+"angle" "-90"
+}
+{
+"classname" "team_human_mgturret"
+"origin" "-104 -52 32"
+"angle" "90"
+}
+{
+"classname" "team_human_medistat"
+"origin" "0 148 0"
+"angle" "180"
+}
+{
+"classname" "target_location"
+"origin" "-800 1696 136"
+"message" "Red Hallway"
+"count" "1"
+}
+{
+"classname" "target_location"
+"origin" "800 -160 136"
+"angle" "180"
+"count" "4"
+"message" "Blue Hallway"
+}
+{
+"classname" "target_location"
+"origin" "544 352 192"
+"message" "Blue Hallway"
+"count" "4"
+}
+{
+"classname" "target_location"
+"origin" "-544 1184 192"
+"angle" "180"
+"count" "1"
+"message" "Red Hallway"
+}
