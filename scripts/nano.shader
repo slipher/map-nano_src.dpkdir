@@ -1,20 +1,5 @@
 // shaders for Nano
 
-// -------------------- Particle dust
-// from Uncreation by Who-[Soup]
-textures/nano/dust_shader
-{
-        cull none
-        entityMergable
-	qer_editorimage textures/nano/dust
-        {
-                map textures/nano/dust.tga
-                blendFunc blend
-                rgbGen          vertex
-                alphaGen        vertex
-        }
-}
-
 // -------------------- Sky box
 // environment map "Top of the Heap" by Mighty Pete
 textures/nano/top-of-the-heap
@@ -29,8 +14,64 @@ textures/nano/top-of-the-heap
      skyparms env/nano/top-of-the-heap/top-of-the-heap512 - -
 }
 
+// -------------------- Particle dust
+// from Uncreation by Who-[Soup]
+// edited as blue and red version
+textures/nano/dust_shader_blue
+{
+        cull none
+        entityMergable
+	qer_editorimage textures/nano/dust_blue
+        {
+                map textures/nano/dust_blue.tga
+                blendFunc blend
+                rgbGen          vertex
+                alphaGen        vertex
+        }
+}
 
-//square orange light 
+textures/nano/dust_shader_red
+{
+        cull none
+        entityMergable
+	qer_editorimage textures/nano/dust_red
+        {
+                map textures/nano/dust_red.tga
+                blendFunc blend
+                rgbGen          vertex
+                alphaGen        vertex
+        }
+}
+
+// flare by Ingar
+textures/nano/flare_orange
+{
+	cull none
+        entityMergable
+	qer_editorimage textures/nano/flare02
+        {
+                map textures/nano/flare02.tga
+                blendFunc blend
+                rgbGen          vertex
+                alphaGen        vertex
+	}
+}
+
+// electric spark, from the map Tremor
+textures/nano/spark1_s
+{
+	cull none
+        entityMergable
+	qer_editorimage textures/nano/spark1
+        {
+                map textures/nano/spark1.tga
+                blendFunc blend
+                rgbGen          vertex
+                alphaGen        vertex
+	}
+}
+
+// orange light
 textures/nano/sq_light_orange_s_10k
 {
 	qer_editorimage textures/nano/sq_light_orange.tga
@@ -48,23 +89,16 @@ textures/nano/sq_light_orange_s_10k
 		blendfunc add
 	}
 }
-
-textures/nano/sq_light_orange_s_5k
+// black, no lightmap
+textures/nano/black
 {
-	qer_editorimage textures/nano/sq_light_orange.tga
-	surfaceparm nomarks
-	q3map_surfacelight 10000
-	{
-		map textures/nano/sq_light_orange.tga
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-	}
-	{
-		map textures/nano/sq_light_orange.tga
-		blendfunc add
-	}
+        qer_editorimage textures/nano/black
+        surfaceparm nomarks
+        surfaceparm nolightmap
+        {
+                map $whiteimage
+                rgbGen const ( 0 0 0 )
+        }
 }
 // source:
 // evil lair's Quake 3:Arena texture set 8  
@@ -146,9 +180,31 @@ textures/nano/e8tmtllight2
 	{
 		map textures/nano/e8tmtllight2.blend.tga
 		blendfunc add
+		rgbGen wave sawtooth .6 .1 0 9
 	}
 }
 
+textures/nano/e8tmtllight2_broken
+{
+	qer_editorimage textures/nano/e8tmtllight2.tga
+	q3map_lightimage textures/nano/e8tmtllight2.blend.tga
+	surfaceparm nomarks
+	q3map_surfacelight 2500
+	{
+		map textures/nano/e8tmtllight2.tga
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		tcGen lightmap 
+	}
+	{
+		map textures/nano/e8tmtllight2.blend.tga
+		blendfunc add
+		rgbGen wave sawtooth 0.0 1.0 0 0.5
+	}
+}
+		
 textures/nano/evil8_rlight
 {
 	qer_editorimage textures/nano/e8_rlight.tga
@@ -186,6 +242,8 @@ textures/nano/e8lighttrim_blue
 	{
 		map textures/nano/e8lighttrim.blend.tga
 		blendfunc add
+		//rgbGen wave sawtooth .6 .1 0 7
+		rgbGen wave sawtooth .6 .2 0 8
 	}
 
 }
@@ -296,6 +354,8 @@ textures/nano/e8lighttrim_red
 	{
 		map textures/nano/e8lighttrim_r.blend.tga
 		blendfunc add
+		//rgbGen wave sawtooth .6 .1 0 7
+		rgbGen wave sawtooth .6 .2 0 8
 	}
 
 }
@@ -482,6 +542,25 @@ textures/nano/shiny_gray
         }
 }
 
+// evillairs e6 grate
+textures/nano/e6xgratebasic_b
+{
+	qer_editorimage textures/nano/e6xgratebasic_b.tga
+	surfaceparm trans
+	surfaceparm nomarks
+	surfaceparm metalsteps
+	{
+		map textures/nano/e6xgratebasic_b.tga
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+	}
+}
+
 // special decal floor
 textures/nano/e8cretefloor01b_decal
 {
@@ -497,32 +576,170 @@ textures/nano/e8cretefloor01b_decal
 	}
 }
 
-// special decial ceiling
-textures/nano/e8support05_decal
+textures/nano/wsupport12
 {
-
-	qer_editorimage textures/nano/e8support05_r.tga
-	polygonOffset
+	q3map_surfacelight 250
 	{
-		map textures/nano/e8support05_r.tga
+		map textures/nano/wsupport12.tga
 	}
 	{
-		map $lightmap
+		map $lightmap 
 		blendfunc filter
-		tcGen lightmap 
+	}
+	{
+		map textures/nano/wsupport12.tga
+		blendfunc add
 	}
 }
 
-// evillairs white striplight
-textures/nano/e6basicstrip_white_500
+textures/nano/clipslick
 {
-        qer_editorimage textures/nano/e6basicstrip_white.tga
-        q3map_surfacelight 500
-        surfaceparm nomarks
+	qer_editorimage textures/common/slick.tga
+        qer_trans 0.50
+        surfaceparm nodraw
         surfaceparm nolightmap
-        {
-                map textures/nano/e6basicstrip_white.tga
+        surfaceparm nomarks
+        surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm playerclip
+        surfaceparm slick
+}
 
+// trembru from Karith
+// blend by Ingar
+textures/nano/trembru_light
+{
+	qer_editorimage textures/nano/trembru.jpg
+	surfaceparm nolightmap
+	q3map_surfacelight 500
+	{
+		map textures/nano/trembru.tga
+	}
+	{
+		map textures/nano/trembru.blend.tga
+		blendfunc add
+	}
+
+}
+
+textures/nano/trembru_tremble
+{
+	qer_editorimage textures/nano/trembru.jpg
+	surfaceparm nolightmap
+	q3map_surfacelight 500
+	{
+		map textures/nano/trembru.tga
+	}
+	{
+		map textures/nano/trembru.blend.tga
+		rgbGen wave sawtooth 0.6 0.4 0 12
+		blendfunc add
+	}
+
+}
+
+// KhalsaCola by Supertanker
+// texture by supertanker, edited by Ingar, granger image by Akele
+// blend by Ingar
+textures/nano/khalsacola_light
+{
+	qer_editorimage textures/nano/khalsacola.jpg
+	surfaceparm nolightmap
+	q3map_surfacelight 500
+	{
+		map textures/nano/khalsacola.tga
+	}
+	{
+		map textures/nano/khalsacola.blend.tga
+		// rgbGen wave <func> <base> <amp><phase> <freq>
+		rgbGen wave sawtooth 0.6 0.4 0 12
+		blendfunc add
+	}
+
+}
+
+
+// shiny shaders
+// inspired by shaders from ATCS3 by Lava_Croft
+textures/nano/e8_mtlwall1_shiny
+{
+        qer_editorimage textures/nano/e8_mtlwall1.jpg
+
+        {
+                map textures/nano/trem2ref.tga
+                tcGen environment
+        }
+        {
+                map textures/nano/e8_mtlwall1_mask.tga
+                blendFunc GL_ONE GL_ONE_MINUS_SRC_ALPHA
+        }
+        {
+                map $lightmap
+                blendFunc GL_DST_COLOR GL_ZERO
         }
 }
 
+textures/nano/e8_mtlwall2_shiny
+{
+        qer_editorimage textures/nano/e8_mtlwall2.jpg
+
+        {
+                map textures/nano/trem2ref.tga
+                tcGen environment
+        }
+        {
+                map textures/nano/e8_mtlwall2_mask.tga
+                blendFunc GL_ONE GL_ONE_MINUS_SRC_ALPHA
+        }
+        {
+                map $lightmap
+                blendFunc GL_DST_COLOR GL_ZERO
+        }
+}
+
+// special decial ceiling
+textures/nano/e8support05_decal
+{
+	qer_editorimage textures/nano/e8support05_r.tga
+	polygonOffset
+        {
+                map textures/nano/trem2ref.tga
+                tcGen environment
+        }
+        {
+                map textures/nano/e8support05_r_mask.tga
+                blendFunc GL_ONE GL_ONE_MINUS_SRC_ALPHA
+        }
+        {
+                map $lightmap
+                blendFunc GL_DST_COLOR GL_ZERO
+	}
+}
+
+textures/nano/e8support05_shiny
+{
+        qer_editorimage textures/nano/e8support05.jpg
+        {
+                map textures/nano/trem2ref.tga
+                tcGen environment
+        }
+        {
+                map textures/nano/e8support05_mask.tga
+                blendFunc GL_ONE GL_ONE_MINUS_SRC_ALPHA
+        }
+        {
+                map $lightmap
+                blendFunc GL_DST_COLOR GL_ZERO
+        }
+}
+
+// vertex lighted trembru tin cans
+// (too dark)
+//models/mapobjects/nano/can/can
+//{
+//	qer_editorimage models/mapobjects/nano/can/can.tga
+//	{
+//		map models/mapobjects/nano/can/can.tga
+//		rgbGen vertex
+//	}
+//}

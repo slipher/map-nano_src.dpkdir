@@ -1,0 +1,174 @@
+December 6, 2009
+=============================================================================
+
+Title                   : Nano!
+
+Filename	        : map-nano.pk3
+
+Author                  : Ingar=KCT=
+
+Email Address           : ingar@telenet.be
+
+Web Site(s)             : http://ingar.satgnu.net/tremulous
+
+Description             : Map for the open source game Tremulous
+			  http://www.tremulous.net
+
+Credits to              : ID-Software for Quake III Arena,
+                          darklegion for Tremulous,
+			  and all contributors of maps, sounds, textures...
+
+			  This map was made with Open Source software:
+			  Linux, KDE, the Gimp, Audacity, NetRadiant.
+
+=============================================================================
+
+	The Nano map file is available under the 
+	conditions of the Creative Commons License
+	http://creativecommons.org/licenses/by-sa/2.5
+
+=============================================================================
+
+	This is the sixth release of my third tremulous map. 
+	
+NANO
+	
+	I originaly made this map to challenge myself and to see if it was
+	possible to build a small and playable tremulous map in a short amount
+	of time. 
+
+	Many players seemed to like the concept and the response has 
+	made me improve the map several times.
+
+	I hope you enjoy it as much as I did.
+
+NOTES
+	The TremBru vending machine requires cg_BounceParticles 1 
+	to function properly.
+
+ACKNOWLEDGEMENTS
+
+	Most textures are taken from
+		Yves 'evillair' Allaire's Quake 3: Arena textures set 8
+		http://evillair.net/
+
+		e8lighttrim_red and e8lighttrim_red.blend were not part of
+		the original texture set and were made by swapping
+		the red and blue RGB channels of e8lighttrim and e8lighttrim.blend 
+
+		original KhalsaCola vending machine texture by 'supertanker',
+			original granger drawing by 'Akele'
+			edited by 'Ingar'
+
+	Skybox
+		Top of the Heap by 'Mighty Pete'
+		http://www.geocities.com/petes-oasis/
+		(converted to jpg)
+
+	Sounds
+		Recorded and edited by 'Ingar'
+
+			ing_fanloop1.wav
+			ing_fanloop2.wav
+
+		Cut from larger sounds found at	http://pdsounds.tuxfamily.org
+
+			trapdoor-start.wav
+			trapdoor-stop.wav
+
+		Sounds taken from tremulous 1.1.0 maps
+
+			electricspark.wav
+			wind2.wav
+
+	Models
+		can model from the map 'SectorB17' by 'gareth'
+
+		original trembru can texture by 'gareth'
+
+		original khalsacola texture by 'Supertanker',
+			original can texture by 'gareth'
+			original granger drawing by 'Akele',
+
+THANKS
+
+	Thorn[mDc], DVSoftware and the Fun-Zone regulars
+
+	Lava_Croft and #satgnu
+
+	The Mercenaries Guild
+
+	F0rqu3 for the polygonOffset trick
+
+	Who-[Soup] for Uncreation
+
+	Jex for ATCS
+
+	Salut SlidinZ!
+
+	The =KCT= Crew
+
+STATISTICS
+
+	Brushes:		5272
+	Entities:		161
+	Compile time:		5 minutes (Intel Core 2 Duo E6700)
+
+SOURCE
+
+	The source .map file is included in the .pk3, and can be opened
+	with a quake map editor like GtkRadiant or NetRadiant.
+	
+	The following settings were used to compile the map:
+
+		q3map2 -leaktest -samplesize 8 -meta
+		q3map2 -vis -saveprt
+		q3map2 -light -fast -shade -dirty -patchshadows -samples 3 -bounce 6 -bouncegrid
+
+	To generate the minimap (needs NetRadiant, I removed the hints from the map first):
+		
+		q3map2 -minimap -size 512 -sharpen 1 -border 0
+
+HISTORY 
+
+	2009-12-06: Final
+		Added flares to the large yellow lights
+		Added fans in the lower tower
+		Added ambient sounds to the tunnels and outposts
+		Updated tower particles
+		Added vending machines
+		Added broken light particles in the blue tunnel
+		Updated locations
+		Updated shaders
+
+	2009-04-12: Beta 4
+		Fixed stage trapdoor triggers
+		Corrected a few texturing errors
+		Worked on the shadow problems with rounded courners patch meshes
+		Removed hanging lamps in the base area
+		Slightly wider Upper Tower area
+		Fixed sparklies in the tunnel corridor
+		Improved player clip
+
+	2009-04-05: Beta 3
+		Completely new base area
+		Smoother hallway ceilings, removed a few ridges
+		Improved team colors
+		Tower stage trapdoor
+
+	2008-03-11: Beta 2
+		Enlarged the base area even more
+		Added two new small rooms
+		Made the doors in the lower tower somewhat wider
+		Added particles to the tower
+
+	2007-06-24: Beta 1
+		Enlarged the base area
+		Replaced the tunnels by more elaborate corridors
+		Fixed the the tunnel floor and ceiling patches
+
+	2007-05-25: Alpha 1
+		Initial public release
+
+
+Questions, bugs or suggestions? Send them to ingar@telenet.be
