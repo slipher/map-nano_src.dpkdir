@@ -47993,13 +47993,13 @@ nano/e8basictrim2_blue
 {
 "classname" "target_speaker"
 "origin" "0.000000 768.000000 1152.000000"
-"noise" "sound/nano/wind2.wav"
+"noise" "sound/nano/wind2"
 "spawnflags" "1"
 }
 {
 "classname" "target_speaker"
 "origin" "0.000000 768.000000 -216.000000"
-"noise" "sound/nano/ing_fanloop2.wav"
+"noise" "sound/nano/ing_fanloop2"
 "spawnflags" "1"
 "angle" "-90.000000"
 }
@@ -48337,8 +48337,8 @@ nano/e8basictrim2_blue
 "speed" "15"
 "wait" "999"
 "targetname" "trapdoor_red"
-"sound1to2" "sound/nano/trapdoor1.wav"
-"soundPos2" "sound/nano/trapdoor2.wav"
+"sound1to2" "sound/nano/trapdoor1"
+"soundPos2" "sound/nano/trapdoor2"
 "rotatorAngle" "90"
 {
 ( -274 828 488 ) ( -274 840 476 ) ( -266 840 476 ) nano/e8metal03c 0 0 0 0.5 0.5 134217728 0 0
@@ -48596,8 +48596,8 @@ nano/e8basictrim2_blue
 "speed" "15"
 "wait" "999"
 "targetname" "trapdoor_blue"
-"sound1to2" "sound/nano/trapdoor1.wav"
-"soundPos2" "sound/nano/trapdoor2.wav"
+"sound1to2" "sound/nano/trapdoor1"
+"soundPos2" "sound/nano/trapdoor2"
 "rotatorAngle" "-90"
 {
 ( 274 828 616 ) ( 266 828 616 ) ( 266 916 616 ) nano/e8metal03c 0 0 0 0.5 0.5 134217728 0 0
@@ -50720,20 +50720,20 @@ nano/e8metal03b
 {
 "classname" "target_speaker"
 "origin" "-1024.000000 0.000000 136.000000"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "spawnflags" "1"
 "angle" "-90.000000"
 }
 {
 "classname" "target_speaker"
 "origin" "-1088.000000 1952.000000 224.000000"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "spawnflags" "1"
 }
 {
 "classname" "target_speaker"
 "origin" "1024.000000 1536.000000 136.000000"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "spawnflags" "1"
 "angle" "90.000000"
 }
@@ -50747,7 +50747,7 @@ nano/e8metal03b
 {
 "classname" "target_speaker"
 "origin" "1088.000000 -416.000000 224.000000"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "spawnflags" "1"
 "angle" "180.000000"
 }
@@ -51159,7 +51159,7 @@ nano/e8metal03b
 {
 "classname" "target_speaker"
 "origin" "-1152.000000 240.000000 64.000000"
-"noise" "sound/nano/electricspark.wav"
+"noise" "sound/nano/electricspark"
 "targetname" "spark"
 }
 {

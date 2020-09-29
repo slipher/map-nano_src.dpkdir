@@ -68,14 +68,14 @@
 }
 {
 "spawnflags" "1"
-"noise" "sound/nano/wind2.wav"
+"noise" "sound/nano/wind2"
 "origin" "0.000000 768.000000 1152.000000"
 "classname" "target_speaker"
 }
 {
 "angle" "-90.000000"
 "spawnflags" "1"
-"noise" "sound/nano/ing_fanloop2.wav"
+"noise" "sound/nano/ing_fanloop2"
 "origin" "0.000000 768.000000 -216.000000"
 "classname" "target_speaker"
 }
@@ -222,8 +222,8 @@
 "model" "*1"
 "origin" "-270.000000 768.000000 444.000000"
 "rotatorAngle" "90"
-"soundPos2" "sound/nano/trapdoor2.wav"
-"sound1to2" "sound/nano/trapdoor1.wav"
+"soundPos2" "sound/nano/trapdoor2"
+"sound1to2" "sound/nano/trapdoor1"
 "targetname" "trapdoor_red"
 "wait" "999"
 "speed" "15"
@@ -235,8 +235,8 @@
 "model" "*2"
 "origin" "270.000000 768.000000 444.000000"
 "rotatorAngle" "-90"
-"soundPos2" "sound/nano/trapdoor2.wav"
-"sound1to2" "sound/nano/trapdoor1.wav"
+"soundPos2" "sound/nano/trapdoor2"
+"sound1to2" "sound/nano/trapdoor1"
 "targetname" "trapdoor_blue"
 "wait" "999"
 "speed" "15"
@@ -311,20 +311,20 @@
 {
 "angle" "-90.000000"
 "spawnflags" "1"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "origin" "-1024.000000 0.000000 136.000000"
 "classname" "target_speaker"
 }
 {
 "spawnflags" "1"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "origin" "-1088.000000 1952.000000 224.000000"
 "classname" "target_speaker"
 }
 {
 "angle" "90.000000"
 "spawnflags" "1"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "origin" "1024.000000 1536.000000 136.000000"
 "classname" "target_speaker"
 }
@@ -338,7 +338,7 @@
 {
 "angle" "180.000000"
 "spawnflags" "1"
-"noise" "sound/nano/ing_fanloop1.wav"
+"noise" "sound/nano/ing_fanloop1"
 "origin" "1088.000000 -416.000000 224.000000"
 "classname" "target_speaker"
 }
@@ -749,7 +749,7 @@
 }
 {
 "targetname" "spark"
-"noise" "sound/nano/electricspark.wav"
+"noise" "sound/nano/electricspark"
 "origin" "-1152.000000 240.000000 64.000000"
 "classname" "target_speaker"
 }
