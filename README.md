@@ -1,5 +1,5 @@
-Nano
-====
+Nano!
+=====
 
 This is a map ported from the [Tremulous](https://tremulous.net) game to the [Unvanquished](https://unvanquished.net) game.
 
