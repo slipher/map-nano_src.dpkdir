@@ -48853,14 +48853,14 @@ nano/e8basictrim2_blue
 "origin" "128.000000 768.000000 448.000000"
 "angle" "180.000000"
 "target" "trapdoor_blue"
-"team" "2"
+"group" "2"
 "stage" "2"
 }
 {
 "classname" "trigger_stage"
 "origin" "-128.000000 768.000000 448.000000"
 "stage" "2"
-"team" "1"
+"group" "1"
 "target" "trapdoor_red"
 }
 {
@@ -50683,27 +50683,27 @@ nano/e8metal03b
 {
 "classname" "trigger_win"
 "origin" "-96.000000 768.000000 960.000000"
-"team" "1"
+"group" "1"
 "angle" "180.000000"
 "target" "dust_red"
 }
 {
 "classname" "trigger_win"
 "origin" "96.000000 768.000000 960.000000"
-"team" "2"
+"group" "2"
 "target" "dust_blue"
 }
 {
 "classname" "trigger_win"
 "origin" "-96.000000 768.000000 1056.000000"
-"team" "1"
+"group" "1"
 "angle" "180.000000"
 "target" "dust"
 }
 {
 "classname" "trigger_win"
 "origin" "96.000000 768.000000 1056.000000"
-"team" "2"
+"group" "2"
 "target" "dust"
 }
 {
@@ -50754,34 +50754,34 @@ nano/e8metal03b
 {
 "classname" "misc_light_flare"
 "origin" "-400.000000 808.000000 8.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 50"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-176.000000 768.000000 592.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 }
 {
 "classname" "misc_light_flare"
 "origin" "128.000000 0.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 512.000000 320.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 1024.000000 320.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
@@ -50789,370 +50789,370 @@ nano/e8metal03b
 "classname" "misc_light_flare"
 "origin" "0.000000 592.000000 592.000000"
 "angle" "90.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 }
 {
 "classname" "misc_light_flare"
 "origin" "176.000000 768.000000 592.000000"
 "angle" "180.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 944.000000 592.000000"
 "angle" "-90.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-256.000000 768.000000 320.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "432.000000 768.000000 352.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "544.000000 560.000000 352.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "672.000000 352.000000 296.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "800.000000 160.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "800.000000 -112.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "800.000000 -416.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "416.000000 -416.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "352.000000 -840.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "352.000000 -920.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "96.000000 -880.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-96.000000 -1024.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-160.000000 -1024.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-288.000000 -880.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 224.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-96.000000 -736.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-160.000000 -736.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-128.000000 -288.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-192.000000 -288.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "64.000000 -288.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 -288.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "64.000000 224.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "128.000000 64.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-352.000000 2456.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 1824.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "160.000000 2272.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-64.000000 1312.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-128.000000 1536.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-96.000000 2416.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-432.000000 768.000000 352.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-672.000000 1184.000000 296.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-544.000000 976.000000 352.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-800.000000 1952.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-800.000000 1376.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-352.000000 2376.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-416.000000 1952.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-800.000000 1648.000000 256.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "0.000000 1312.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "288.000000 2416.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "160.000000 2560.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "128.000000 1824.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "96.000000 2560.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "96.000000 2272.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-128.000000 1472.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "192.000000 1824.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-64.000000 1824.000000 224.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "256.000000 768.000000 320.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 40"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "-400.000000 728.000000 8.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 50"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "400.000000 808.000000 8.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 50"
 "angles" "90 0 0"
 }
 {
 "classname" "misc_light_flare"
 "origin" "400.000000 728.000000 8.000000"
-"targetShaderName" "textures/nano/flare_orange"
+"shader" "textures/nano/flare_orange"
 "radius" "10 0 50"
 "angles" "90 0 0"
 }
