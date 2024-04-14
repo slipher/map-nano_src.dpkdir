@@ -2,6 +2,7 @@
 "classname" "worldspawn"
 "message" "Nano^1!"
 "gridsize" "1024 1024 1024"
+"forceLegacyOverBrightClamping" "1"
 {
 ( 160 -816 -16 ) ( 176 -944 -16 ) ( 160 -944 -16 ) nano/e8support06b 0 256 90 0.25 0.25 134217728 0 0
 ( 176 -816 -24 ) ( 176 -816 -16 ) ( 160 -816 -16 ) common/caulk 0 0 0 0.5 0.5 134217728 0 0
